@@ -14,8 +14,8 @@ img {vertical-align: middle;}
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
-  position: absolute;
-  top: 50%;
+  position: fixed;
+  top: 45%;
   width: auto;
   padding: 16px;
   margin-top: -22px;
@@ -26,9 +26,15 @@ img {vertical-align: middle;}
   border-radius: 0 3px 3px 0;
   user-select: none;
 }
-
+/* Position the "prev button" to the left */
+.prev {
+  margin-left: 5%;
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
 /* Position the "next button" to the right */
 .next {
+  margin-right: 5%;
   right: 0;
   border-radius: 3px 0 0 3px;
 }
